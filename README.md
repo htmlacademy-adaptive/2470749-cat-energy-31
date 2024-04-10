@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ксения Тряпицына](https://up.htmlacademy.ru/adaptive/31/user/2470749).
-* Наставник: [Антон Варнавский] (https://htmlacademy.ru/profile/anton_varnauski).
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
