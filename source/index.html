@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -34,7 +38,11 @@
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="#" width="280" height="270" alt="Фотография банки с кошачьим кормом Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x">
+        <img class="hero__image" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png" alt="Фотография банки с кошачьим кормом Cat Energy">
+      </picture>
       <a class="hero__select button button--primary" href="#">Подобрать программу</a>
     </section>
 
@@ -73,20 +81,30 @@
       </dl>
       <p class="examples__summary">Затраты на питание: <span>15 000</span> руб.</p>
       <div class="examples__container">
-        <img class="examples__image" src="#" width="280" height="256" alt="Фотография толстого кота">
-        <img class="examples__image" src="#" width="280" height="256" alt="Фотография стройного кота">
+        <picture>
+          <source media="(min-width: 768px)" width="280" height="512" type="image/png" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+          <img class="examples__image" src="images/cat-before-mobile@1x.png" width="140" height="256" srcset="images/cat-before-mobile@2x.png" alt="Фотография толстого кота">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="280" height="512" type="image/png" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+          <img class="examples__image" src="images/cat-after-mobile@1x.png" width="140" height="256" srcset="images/cat-after-mobile@2x.png" alt="Фотография стройного кота">
+        </picture>
         <button class="examples__switch" type="button">Ползунок слайдера</button>
       </div>
     </section>
 
     <section class="location">
       <h2 class="visually-hidden">Где нас найти</h2>
-      <div class="location__container">
-        <p class="location__text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="location__address">ул. Большая Конюшенная, д. 19/8 <p class="location__city">Санкт-Петербург</p>
-        </address>
+      <p class="location__text">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="location__address">ул. Большая Конюшенная, д. 19/8 <p class="location__city">Санкт-Петербург</p>
+      </address>
+      <div class="location__map-container">
+        <img class="location__map" src="#" width="320" height="362" alt="Карта с обозначением локации магазина">
+        <picture>
+          <source media="(min-width: 768px)" width="113" height="106" type="image/png" srcset="images/map-pin-tablet@1x.png 1x, images/map-pin-tablet@2x.png 2x">
+          <img class="examples__image" src="images/map-pin-mobile@1x.png" width="57" height="53" srcset="images/map-pin-mobile@2x.png" alt="Метка расположения магазина на карте">
+        </picture>
       </div>
-      <img class="location__map" src="#" width="320" height="362" alt="Карта с обозначением локации магазина">
     </section>
   </main>
 
