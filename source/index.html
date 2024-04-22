@@ -109,10 +109,18 @@
       <address class="location__address">ул. Большая Конюшенная, д. 19/8 <p class="location__city">Санкт-Петербург</p>
       </address>
       <div class="location__map-container">
-        <img class="location__map" src="#" width="320" height="362" alt="Карта с обозначением локации магазина">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/index/map/map-desktop@1x.webp 1x, images/index/map/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/index/map/map-tablet@1x.webp 1x, images/index/map/map-tablet@2x.webp 2x">
+          <source width="320" height="362" type="image/webp" srcset="images/index/map/map-mobile@1x.webp 1x, images/index/map/map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)" width="1400" height="400" type="image/png" srcset="images/index/map/map-desktop@1x.png 1x, images/index/map/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/index/map/map-tablet@1x.png 1x, images/index/map/map-tablet@2x.png 2x">
+          <img class="location__map" src="images/index/map/map-mobile@1x.png" width="320" height="362" srcset="images/index/map/map-mobile@2x.png" alt="Карта с обозначением локации магазина">
+        </picture>
         <picture>
           <source media="(min-width: 768px)" width="113" height="106" type="image/webp" srcset="images/index/map-pin/map-pin-tablet@1x.webp 1x, images/index/map-pin/map-pin-tablet@2x.webp 2x">
-          <source width="57" height="53" type="image/webp" srcset="images/index/map-pin/map-pin-tablet@1x.webp 1x, images/index/map-pin/map-pin-tablet@2x.webp 2x">
+          <source width="57" height="53" type="image/webp" srcset="images/index/map-pin/map-pin-mobile@1x.webp 1x, images/index/map-pin/map-pin-mobile@2x.webp 2x">
 
           <source media="(min-width: 768px)" width="113" height="106" type="image/png" srcset="images/index/map-pin/map-pin-tablet@1x.png 1x, images/index/map-pin/map-pin-tablet@2x.png 2x">
           <img class="location__map-pin-image" src="images/index/map-pin/map-pin-mobile@1x.png" width="57" height="53" srcset="images/index/map-pin/map-pin-mobile@2x.png" alt="Метка расположения магазина на карте">
