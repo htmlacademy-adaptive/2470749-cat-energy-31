@@ -1,0 +1,37 @@
+.examples {
+  background-color: #eaeaea;
+}
+
+.examples__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.examples__text {}
+
+.examples__stats {}
+
+.examples__number {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.examples__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.examples__summary {
+  font-family: "Oswald", sans-serif;
+  line-height: 20px;
+  text-align: center;
+}
+
+.examples__image {}
+
+.examples__switch {}

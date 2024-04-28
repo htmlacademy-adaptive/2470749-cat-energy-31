@@ -1,0 +1,23 @@
+.card {}
+
+.card__image-link {}
+
+.card__product-image {}
+
+.card__title-link {
+  color: $secondary-dark-gray-2;
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card__features-list {}
+
+.card__item {
+  font-size: 12px;
+  line-height: 16px;
+}
