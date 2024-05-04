@@ -1,3 +1,19 @@
 .developer-logo {}
 
-.developer-logo__link {}
+.developer-logo__link {
+  display: block;
+  background-color: $basic-dark-gray;
+  cursor: pointer;
+}
+
+.developer-logo__link--logo-title {
+  mask-image: url("../../icons/stack.svg#html-academy-text-logo");
+  width: 113px;
+  height: 20px;
+}
+
+.developer-logo__link--logo-image {
+  mask-image: url("../../icons/stack.svg#html-academy-logo");
+  width: 27px;
+  height: 34px;
+}

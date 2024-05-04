@@ -1,8 +1,17 @@
-.promo {}
+.promo {
+}
 
 .promo__text {
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
   background-color: $basic-green;
+}
+
+.promo__text::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#gift-icon");
 }

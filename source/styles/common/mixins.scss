@@ -8,10 +8,19 @@
   }
 }
 
+@mixin for-pseudo-image-add {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
 @mixin button {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 10px;
+  border: none;
 }
 
 @mixin primary-button {
@@ -20,6 +29,6 @@
 }
 
 @mixin secondary-button {
-  color: $primary-dark-gray;
+  color: #444444;
   background-color: $basic-light-gray;
 }

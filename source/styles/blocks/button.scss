@@ -1,1 +1,16 @@
-.button {}
+.button {
+  @include button;
+}
+
+.button--primary {
+  @include primary-button;
+}
+
+.button--secondary {
+  @include secondary-button;
+}
+
+.button--big {
+  font-size: 20px;
+  line-height: 26px;
+}

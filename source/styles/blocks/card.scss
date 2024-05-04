@@ -5,11 +5,11 @@
 .card__product-image {}
 
 .card__title-link {
-  color: $secondary-dark-gray-2;
+  color: #222222;
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -21,3 +21,5 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+.card__order {}

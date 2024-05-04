@@ -3,7 +3,7 @@
 }
 
 .examples__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
@@ -14,7 +14,7 @@
 .examples__stats {}
 
 .examples__number {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
@@ -27,11 +27,32 @@
 }
 
 .examples__summary {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   line-height: 20px;
   text-align: center;
 }
 
 .examples__image {}
 
-.examples__switch {}
+.examples__switch {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $basic-dark-gray;
+  border-radius: 50%;
+  background-color: $basic-white;
+  cursor: pointer;
+}
+
+.examples__switch::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  transform: translateY(-50%);
+  mask-image: url("../../icons/stack.svg#slider-arrows");
+  background-color: $basic-dark-gray;
+  mask-repeat: no-repeat;
+}

@@ -1,9 +1,16 @@
 .main-nav {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   color: $basic-black;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#navigation-icon-mobile");
+  background-color: $basic-black;
 }
 
 .main-nav__item {}

@@ -5,19 +5,8 @@
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   background-color: $basic-white;
