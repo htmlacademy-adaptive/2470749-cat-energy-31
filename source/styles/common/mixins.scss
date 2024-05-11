@@ -8,27 +8,9 @@
   }
 }
 
-@mixin for-pseudo-image-add {
-  content: "";
-  display: block;
-  position: absolute;
-}
-
-@mixin button {
-  font-family: $oswald-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  padding: 10px;
-  border: none;
-}
-
-@mixin primary-button {
-  color: $basic-white;
-  background-color: $basic-green;
-}
-
-@mixin secondary-button {
-  color: #444444;
-  background-color: $basic-light-gray;
+@mixin flex($direction:row, $justify:center, $align:center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }

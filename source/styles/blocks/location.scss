@@ -1,17 +1,72 @@
 .location {}
 
+.location__container {
+  @include flex();
+  width: $mobile-container-width;
+  margin: 0 auto;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+    padding: 61px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    transform: translateX(110px) translateY(95px);
+    z-index: 1;
+
+    width: 39%;
+    padding: 50px 78px;
+    background-color: $basic-white;
+  }
+}
+
 .location__text {
+  width: 50%;
+
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 28%;
+  }
 }
 
 .location__address {
+  width: 50%;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 22%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
 }
 
-.location__city {}
+.location__city {
+  margin: 0;
+}
 
-.location__map-container {}
+.location__map-container {
+  width: 100%;
+}
+
+.location__map {
+  position: relative;
+}
+
+.location__map-pin-image {
+  position: absolute;
+  transform: translateX(-186px) translateY(138px);
+}

@@ -1,11 +1,19 @@
-.card {}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-.card__image-link {}
+.card__image-link {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  justify-self: center;
+}
 
 .card__product-image {}
 
 .card__title-link {
   color: #222222;
+  grid-column: 2 / 3;
 }
 
 .card__title {
@@ -15,11 +23,18 @@
   text-transform: uppercase;
 }
 
-.card__features-list {}
+.card__features-list {
+  grid-column: 2 / 3;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 .card__item {
   font-size: 12px;
   line-height: 16px;
 }
 
-.card__order {}
+.card__order {
+  grid-column: 1 / 3;
+}

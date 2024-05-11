@@ -1,4 +1,6 @@
-.show-more-card {}
+.show-more-card {
+  @include flex(column, flex-end, center);
+}
 
 .show-more-card__title {
   font-family: $oswald-font;
@@ -13,4 +15,6 @@
   line-height: 16px;
 }
 
-.show-more-card__to-all {}
+.show-more-card__to-all {
+  width: 100%;
+}

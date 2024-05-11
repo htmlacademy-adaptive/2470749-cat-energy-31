@@ -1,12 +1,25 @@
 .hero {
+  @include flex(column, center, center);
+
   font-family: $oswald-font;
   color: $basic-white;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+    margin: 0 auto;
+
+    background-color: $basic-white;
+    color: $basic-black;
+  }
 }
 
 .hero__title {
+  margin: 0;
+
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 }
 
 .hero__text {
@@ -16,4 +29,8 @@
 
 .hero__image {}
 
-.hero__select {}
+.hero__select {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}

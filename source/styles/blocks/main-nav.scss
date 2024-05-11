@@ -9,10 +9,40 @@
 .main-nav__toggle {
   width: 24px;
   height: 24px;
-  mask-image: url("../../icons/stack.svg#navigation-icon-mobile");
+  mask-image: url("../../icons/stack.svg#toggle-icon");
   background-color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav__item {}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
-.main-nav__item-link {}
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center);
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-nav__item::after {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.main-nav__item-link {
+  text-decoration: none;
+}

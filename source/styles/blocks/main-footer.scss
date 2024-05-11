@@ -2,8 +2,50 @@
   background-color: $basic-light-gray;
 }
 
-.main-footer__link {}
+.main-footer__container {
+  @include flex(column, space-between, center);
 
-.main-footer__social-list {}
+  width: $mobile-container-width;
+  margin: 0 auto;
+  padding: 40px 0;
 
-.main-footer__developer {}
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    width: $tablet-container-width;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+    padding: 66px 0;
+  }
+}
+
+.main-footer__logo-link {
+  width: 128px;
+  height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.main-footer__social-list {
+  @include flex();
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+  }
+}
+
+.main-footer__developer {
+  @include flex(row, space-between, center);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}

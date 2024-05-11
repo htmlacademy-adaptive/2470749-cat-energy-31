@@ -1,8 +1,32 @@
-.products {}
+.products {
+  width: $mobile-container-width;
+  margin: 0 auto;
 
-.products__container {}
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+  }
 
-.products__product-card {}
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+  }
+}
+
+.products__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.products__product-card {
+}
 
 .products__title {
   font-family: $oswald-font;

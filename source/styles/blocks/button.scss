@@ -1,13 +1,21 @@
 .button {
-  @include button;
+  display: block;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
 }
 
 .button--primary {
-  @include primary-button;
+  color: $basic-white;
+  background-color: $basic-green;
 }
 
 .button--secondary {
-  @include secondary-button;
+  color: #444444;
+  background-color: $basic-light-gray;
 }
 
 .button--big {
