@@ -1,1 +1,19 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $basic-white;
+  color: #444444;
+}
+
+picture,
+source {
+  display: contents;
+}
