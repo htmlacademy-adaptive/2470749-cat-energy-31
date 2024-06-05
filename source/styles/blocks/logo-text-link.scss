@@ -1,6 +1,17 @@
 .logo-text-link {
   display: block;
+  width: 101px;
+  height: 21px;
   background-color: #111111;
   mask-image: url("../../icons/stack.svg#cat-energy-text-logo");
   cursor: pointer;
+}
+
+.logo-text-link:hover,
+.logo-text-link:focus {
+  background-color: #3e3e3e;
+}
+
+.logo-text-link:active {
+  background-color: #6b6b6b;
 }

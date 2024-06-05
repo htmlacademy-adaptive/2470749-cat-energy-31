@@ -1,9 +1,11 @@
 .offer {
   width: $mobile-container-width;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-container-width;
+    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,83 +14,213 @@
     gap: 7%;
 
     width: $desktop-container-width;
-    margin: 82px auto 71px;
+    margin-bottom: 71px;
+    padding-top: 50px;
   }
 }
 
 .offer__item {
-  background-color: #d9d9d9;
+  margin-bottom: 17px;
+  padding: 30px 20px 18px;
+
+  background-color: $basic-light-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 51px 53px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 46%;
+    margin-bottom: 0;
+    padding: 41px 49px 54px;
   }
 }
 
 .offer__title {
   position: relative;
 
+  margin: 0;
+  padding: 0 0 30px 70px;
+
   font-family: $oswald-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding: 0 0 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 0 74px 162px;
+  }
 }
 
 .offer__title::before {
   content: "";
   display: block;
   position: absolute;
+  top: -3px;
+  left: 0;
 
   width: 50px;
   height: 50px;
 
   border-radius: 50%;
   background-color: $basic-green;
+
+  @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+    left: 65%;
+    top: 14px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 7px;
+
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .offer__title--slim::after {
   content: "";
   display: block;
   position: absolute;
-  transform: translateY(-40px) translateX(7px);
+  top: 0;
+  left: 0;
+  transform: translateY(-6px) translateX(6px);
 
   width: 36px;
   height: 50px;
 
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
+
+  @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+    left: 69%;
+    top: 10px;
+
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(14px);
+
+    width: 70px;
+    height: 97px;
+  }
 }
 
 .offer__title--fit::after {
   content: "";
   display: block;
   position: absolute;
-  transform: translateY(-25px) translateX(-8px);
+  top: 0;
+  left: 0;
+  transform: translateY(7px) translateX(-8px);
 
   width: 67px;
   height: 28px;
 
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
+
+  @media ((min-width: $tablet-width) and (max-width: $tablet-width-max)) {
+    top: 50px;
+    left: 61%;
+
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(27px) translateX(-17px);
+
+    width: 134px;
+    height: 56px;
+  }
 }
 
-.offer__description {}
+.offer__description {
+  position: relative;
+  margin: 0;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 56%;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-bottom: 27px;
+  }
+}
+
+.offer__description::after {
+  @media (max-width: $mobile-width-max) {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 19px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #d9d9d9;
+  }
+}
 
 .offer__link {
+  position: relative;
+  display: block;
+
+  margin-bottom: 5px;
+
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 16px;
   color: $basic-black;
   text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.offer__link:active {
+  opacity: 0.3;
 }
 
 .offer__link::after {
   content: "";
-  display: block;
+  position: absolute;
+  top: 2px;
+  margin-left: 15px;
 
-  width: 32px;
-  height: 10px;
+  width: 35px;
+  height: 12px;
 
   mask-image: url("../../icons/stack.svg#arrow-icon");
   background-color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    margin-left: 25px;
+  }
 }

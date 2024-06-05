@@ -12,3 +12,8 @@ body {
   background-color: $basic-white;
   color: #444444;
 }
+
+picture,
+source {
+  display: contents;
+}

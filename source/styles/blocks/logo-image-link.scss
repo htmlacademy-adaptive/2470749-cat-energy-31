@@ -1,4 +1,8 @@
-.logo {
+.logo-image-link:hover .logo-image-link__icon,
+.logo-image-link:focus .logo-image-link__icon {
+  opacity: 0.8;
 }
 
-.logo__link {}
+.logo-image-link:active .logo-image-link__icon {
+  opacity: 0.6;
+}

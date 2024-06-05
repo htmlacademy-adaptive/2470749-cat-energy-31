@@ -1,28 +1,79 @@
 .subscription {
   width: $mobile-container-width;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   font-family: $oswald-font;
 
   @media (min-width: $tablet-width) {
     width: $tablet-container-width;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-container-width;
+    margin-bottom: 104px;
   }
 }
 
 .subscription__title {
+  position: relative;
+
+  width: fit-content;
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
+  background-color: $basic-white;
+  box-shadow: -40px 0 0 0 $basic-white, 40px 0 0 0 $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $basic-green;
+    box-shadow: 100vw 0 0 0 $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 66px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 74px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscription__text {
+  margin: 0 auto 24px;
+
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .subscription__email-form {
@@ -35,10 +86,15 @@
 
 .subscription__input {
   width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
 
+  font-family: $oswald-font;
+  color: #444444;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -49,6 +105,18 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+}
+
+.subscription__input:hover {
+  border-color: #cdcdcd;
+}
+
+.subscription__input:focus {
+  border: 2px solid #444444;
+}
+
+.subscription__input:active {
+  border: 2px solid #ff8282;
 }
 
 .subscription__subscribe {

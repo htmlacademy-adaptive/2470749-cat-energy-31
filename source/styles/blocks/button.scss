@@ -1,10 +1,14 @@
 .button {
   display: block;
+
+  padding: 10px;
+
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px;
+  text-decoration: none;
+  text-align: center;
   border: none;
 }
 
@@ -13,12 +17,33 @@
   background-color: $basic-green;
 }
 
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #5eaa2f;
+}
+
+.button--primary:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--secondary {
   color: #444444;
   background-color: $basic-light-gray;
 }
 
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
+}
+
 .button--big {
+  padding: 15px;
+
   font-size: 20px;
   line-height: 26px;
 }
