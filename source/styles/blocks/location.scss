@@ -2,6 +2,13 @@
   background-color: $basic-light-gray;
 }
 
+.location__centring-container {
+  position: relative;
+
+  width: 1220px;
+  margin: 0 auto;
+}
+
 .location__container {
   @include flex(row, space-between, center);
   flex-wrap: wrap;
@@ -21,11 +28,13 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    transform: translateX(111px) translateY(93px);
     z-index: 1;
 
-    width: 39%;
-    padding: 61px 79px;
+    top: 94px;
+
+    width: 563px;
+    padding: 62px 79px;
+
     background-color: $basic-white;
   }
 }

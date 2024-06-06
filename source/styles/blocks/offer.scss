@@ -9,9 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(row, center, center);
+    @include flex(row, space-between, center);
     flex-wrap: wrap;
-    gap: 7%;
 
     width: $desktop-container-width;
     margin-bottom: 71px;
@@ -31,9 +30,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 46%;
+    width: 570px;
     margin-bottom: 0;
-    padding: 41px 49px 54px;
+    padding: 41px 52px 54px;
   }
 }
 

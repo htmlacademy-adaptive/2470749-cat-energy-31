@@ -28,11 +28,10 @@
 
     @include flex(column, center, start);
     flex-wrap: wrap;
-    width: 30%;
 
-    padding-top: 78px;
-    margin-left: 190px;
-    margin-right: 23%;
+    width: $desktop-container-width;
+    margin: 0 auto;
+    margin-top: 106px;
     margin-bottom: 215px;
 
     background-color: transparent;
@@ -120,8 +119,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 79px;
     margin-bottom: 41px;
-    width: 100%;
+    width: 40%;
   }
 }
 
@@ -143,6 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 79px;
     margin-bottom: 53px;
   }
 }
@@ -158,9 +159,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
 
-    top: 17%;
-    left: 44%;
-    transform: translateX(15px) translateY(-3px);
+    transform: translateX(539px) translateY(26px);
   }
 }
 
@@ -182,5 +181,7 @@
 
   @media (min-width: $desktop-width) {
     position: static;
+
+    margin-left: 80px;
   }
 }
